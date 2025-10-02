@@ -1,0 +1,59 @@
+body  {
+    background-color: white;
+    margin: 0px;
+}
+
+nav  {
+    overflow: hidden;
+    height: 130px;
+}
+
+nav ul li a  {
+    text-decoration: none;
+    color: black;
+    font: italic bold 24px "Playfair Display", serif;
+    text-align: center;
+}
+
+nav a  {
+    padding: 100% 15px;
+}
+
+nav a:hover  {
+    background-color: #efebce;
+}
+
+nav a.active  {
+    background-color: #df6a16;
+}
+
+.logo-link  {
+    padding-top: 130px; /* why does it need to be that value? */
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo  {
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+}
+
+main  {
+    background-color: #efebce;
+}
+
+.orange text  {
+    color: #df6a16;
+}
