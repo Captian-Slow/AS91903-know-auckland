@@ -1,0 +1,187 @@
+/* Importing fonts from Google Fonts - mention font licenses */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+
+/* UNIVERSAL styles */
+body  {
+    background-color: white;
+    margin: 0px;
+}
+
+p, ol, footer  {
+    font: normal 16px "IBM Plex Sans", sans-serif;
+    color: black;
+}
+
+nav  {
+    overflow: hidden;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a  {
+    text-decoration: none;
+    color: black;
+    font: italic bold 24px "Playfair Display", serif; /* mention font license */
+    text-align: center;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    flex-basis: 130px;
+}
+
+nav a:hover  {
+    background-color: #efebce;
+}
+
+.logo-link-top  {
+    text-decoration: none;
+    background-color: black;
+}
+
+main  {
+    background-color: #efebce;
+}
+
+section h2  {
+    font: 18px "IBM Plex Serif", serif;
+    color: black;
+}
+
+footer  {
+    background-color: white;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a  {
+    text-decoration: underline;
+    color: #df6a16;
+}
+
+/* HOME PAGE styles */
+
+article header  {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 20px;
+}
+
+article header img  {
+    border-radius: 30px;
+    flex-grow: 1;
+}
+
+.space  {
+    padding-left: 20px;
+}
+
+article header h1  {
+    flex-grow: 3;
+    font: 30px "IBM Plex Sans", sans-serif;
+}
+
+.big-title  {
+    font: 72px "IBM Plex Serif", serif;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) and (min-width: 900px)  {
+    .big-title  {
+        font: 54px "IBM Plex Serif", serif;
+    }
+    article header img  {
+        border-radius: 15px;
+        flex-grow: 1;
+    }
+    article header h1  {
+        flex-grow: 3;
+        font: 24px "IBM Plex Sans", sans-serif;
+    }
+}
+
+@media screen and (max-width: 899px)  {
+    article header  {
+        display: block;
+        padding: 10px 10px;
+    }
+
+    .big-title  {
+        font: 36px "IBM Plex Serif", serif;
+        text-align: center;
+    }
+
+    .space {
+        display: none;
+    }
+
+    article header img  {
+        border-radius: 15px;
+        flex-grow: 1;
+        width: 40%;
+        height: auto;
+    }
+
+    article header h1  {
+        flex-grow: 0;
+        font: 20px "IBM Plex Sans", sans-serif;
+        text-align: center;
+    }
+}
+
+/* ABOUT PAGE styles */
+
+.about-page  {
+    padding: 0px 0px;
+}
+
+.place-section  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 0px;
+}
+
+.place-section img  {
+    grid-area: 1 / 2 / span 2 / span 1;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+}
+
+.purpose-section  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.purpose-section img  {
+    grid-area: 1 / 1 / span 2 / span 1;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+}
+
+.place-section h1, .purpose-section h1  {
+    font: 36px "IBM Plex Serif", serif;
+}
+
+.place-section p, .purpose-section p  {
+    font: normal 16px "IBM Plex Sans", sans-serif;
+    color: black;
+    padding: 0px 20px 0px 0px;
+    text-align: justify;
+}
+
+/* Responsive design */
+
+/* GALLERY PAGE styles */
+
+/* Responsive design */
